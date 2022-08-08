@@ -1,0 +1,3 @@
+  282  ls
+  283  cat fofinhos.txt
+  284  history | tail -3
