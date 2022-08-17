@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color: aquamarine;
+    background-color: rgb(59, 112, 114);
     text-align: center;
     border: 0.2rem solid black;
     width: 60rem;
@@ -11,13 +11,14 @@ header {
     margin-right: auto;
     margin-bottom: 1.2rem;
     border-style: dashed;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
-    background-color: aquamarine;
+    font-size: 1.4rem;
+    background-color: rgb(59, 112, 114);
+    color:white;
 }
 
 .links-pages {
@@ -25,26 +26,50 @@ header h1 {
 }
 
 ul li.links-pages a:hover {
-    color: aquamarine;
+    color: rgb(83, 143, 145);
     background-color: rgb(40, 3, 59);
 }
 
 ul li.links-pages a {
-    color: rgb(40, 3, 59);
+    color: white;
     text-align: center;
-    border: 0.1rem solid black;
+    border: 0.1rem dashed black;
     display: inline-block;
-    background-color: aquamarine;
+    background-color: rgb(59, 112, 114);
     padding: 0 6rem 0 6rem;
     margin-left: 5rem;
     margin-right: 5rem;
-    border-style: outset;
-    border-radius: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-decoration: none;
 }
 
-article {
-    
+main {
+    background-color: rgb(59, 112, 114);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 0.2rem dashed black;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+#description {
+    border: 0.1rem solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+main article section#description p {
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main article section#description h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
 }
