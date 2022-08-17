@@ -9,12 +9,42 @@ header {
     width: 60rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.2rem;
     border-style: dashed;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     background-color: aquamarine;
+}
+
+.links-pages {
+    display: inline-block;
+}
+
+ul li.links-pages a:hover {
+    color: aquamarine;
+    background-color: rgb(40, 3, 59);
+}
+
+ul li.links-pages a {
+    color: rgb(40, 3, 59);
+    text-align: center;
+    border: 0.1rem solid black;
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 0 6rem 0 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-style: outset;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+article {
+    
 }
