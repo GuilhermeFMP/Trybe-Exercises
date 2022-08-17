@@ -184,3 +184,17 @@ nav#references ul li a {
     color: darkblue;
     text-decoration: none;
 }
+
+nav#references ul li a:hover {
+    color: orangered;
+}
+
+footer {
+    margin-left: 40rem;
+}
+
+footer h3 {
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
