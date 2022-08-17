@@ -27,7 +27,7 @@ header h1 {
 
 ul li.links-pages a:hover {
     color: rgb(83, 143, 145);
-    background-color: rgb(40, 3, 59);
+    background-color: rgb(9, 52, 94);
 }
 
 ul li.links-pages a {
@@ -49,7 +49,7 @@ main {
     margin-left: 3rem;
     margin-right: 3rem;
     border: 0.2rem dashed black;
-    padding: 1rem 3rem;
+    padding: 0rem 3rem;
     border-radius: 1rem;
 }
 
@@ -72,4 +72,41 @@ main article section#description p {
 main article section#description h3 {
     font-size: 1.5rem;
     font-weight: 900;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+table tr td:nth-of-type(1) {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    border: 0.1rem solid black;
+}
+
+table tr td:nth-of-type(2) {
+    text-align: right;
+    padding-left: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 0.1rem solid black;
+}
+
+table tr td:hover {
+    background-color: rgb(9, 52, 94);
+    color: white;
+}
+
+article {
+    background-color: rgb(59, 112, 114)
+}
+
+article h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: rgb(59, 112, 114);
+    color: white;
+    font-size: 1.5rem;
 }
