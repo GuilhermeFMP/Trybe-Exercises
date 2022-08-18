@@ -1,0 +1,200 @@
+* {
+    background-color: cadetblue;
+}
+
+header {
+    background-color: rgb(59, 112, 114);
+    text-align: center;
+    border: 0.2rem solid black;
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2rem;
+    border-radius: 1rem;
+}
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    background-color: rgb(59, 112, 114);
+    color:white;
+}
+
+.links-pages {
+    display: inline-block;
+}
+
+ul li.links-pages a:hover {
+    color: rgb(83, 143, 145);
+    background-color: rgb(9, 52, 94);
+}
+
+ul li.links-pages a {
+    color: white;
+    text-align: center;
+    border: 0.1rem dashed black;
+    display: inline-block;
+    background-color: rgb(59, 112, 114);
+    padding: 0 6rem 0 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgb(59, 112, 114);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 0.2rem dashed black;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+}
+
+#description {
+    display: inline-block;
+    border: 0.3rem solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 40rem;
+    margin-left: 6rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+main article section#description p {
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main article section#description h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+table tr td:nth-of-type(1) {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    border: 0.1rem solid black;
+}
+
+table tr td:nth-of-type(2) {
+    text-align: right;
+    padding-left: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 0.1rem solid black;
+}
+
+table tr td:hover {
+    background-color: rgb(9, 52, 94);
+    color: white;
+}
+
+article {
+    width: 60rem;
+    background-color: rgb(59, 112, 114)
+}
+
+main h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: rgb(59, 112, 114);
+    color: white;
+    font-size: 2rem;
+}
+
+.articles-main {
+    width: 64rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 0.5rem;
+    border: 0.3rem solid black;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 30rem;
+    margin-left: 16rem;
+    margin-top: 1rem;
+}
+
+.title-article {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.paragrafo-text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 2rem 3rem;
+    line-height: 1.5rem;
+}
+
+#lateral-bar {
+    float: right;
+    width: 20rem;
+    height: 13rem;
+    border: 0.3rem solid black;
+    margin-top: 6rem;
+    margin-right: 6rem;
+}
+
+aside h2 {
+    color: black;
+}
+
+aside a {
+    font-weight: 800;
+    color: red;
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 1.5rem;
+}
+
+aside a:hover {
+    color: orange;
+}
+
+#references {
+    margin-right: 25rem;
+    margin-left: 25rem;
+    border: 0.3rem solid black;
+    margin-bottom: 2rem;
+}
+
+nav#references h3 {
+    margin-left: 3rem;
+    text-transform: uppercase;
+}
+
+nav#references ul li a {
+    font-weight: 800;
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav#references ul li a:hover {
+    color: orangered;
+}
+
+footer {
+    margin-left: 40rem;
+}
+
+footer h3 {
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
