@@ -1,4 +1,4 @@
-let numero = -9;
+function inteiros(numero) {
 
 if (numero > 0) {
     console.log("Positive");
@@ -7,3 +7,7 @@ if (numero > 0) {
 } else {
     console.log("Zero")
 }
+
+}
+
+inteiros(-9)

@@ -1,4 +1,4 @@
-let peça = "Tower";
+function xadrez(peça) {
 peça = peça.toLowerCase()
 
 switch (peça) {
@@ -30,3 +30,7 @@ switch (peça) {
     console.log("Erro")
 
 }
+
+}
+
+xadrez("King");

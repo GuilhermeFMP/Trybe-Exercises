@@ -1,4 +1,4 @@
-const salario = 2000;
+function ganhos(salario) {
 
 let inss = 0;
 let ir = 0;
@@ -30,3 +30,7 @@ if (salarioBase > 4664.68) {
 let salarioLiquido = salarioBase - ir;
 
 console.log(salarioLiquido)
+
+}
+
+ganhos(3500);

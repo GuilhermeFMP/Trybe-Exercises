@@ -1,5 +1,4 @@
-const a = 8;
-const b = 5;
+function numeroMaior(a , b) {
 
 if (a > b) {
     console.log("O maior número é", a);
@@ -8,3 +7,7 @@ if (a > b) {
 } else {
     console.log("Eles são iguais");
 }
+
+}
+
+numeroMaior(15 , 20);

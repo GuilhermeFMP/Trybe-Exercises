@@ -1,6 +1,4 @@
-const a = 7;
-const b = 4;
-const c = 10;
+function numeroMaior(a , b , c) {
 
 if (a > b && a > c) {
     console.log("O maior número é", a);
@@ -11,3 +9,7 @@ if (a > b && a > c) {
 } else {
     console.log("os numeros são iguais");
 }
+
+}
+
+numeroMaior(7 , 10 , 5);

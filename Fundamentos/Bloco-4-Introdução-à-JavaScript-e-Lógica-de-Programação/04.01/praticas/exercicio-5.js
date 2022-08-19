@@ -1,6 +1,4 @@
-let angulo1 = 60;
-let angulo2 = 60;
-let angulo3 = 60;
+function triangulo(angulo1 , angulo2 , angulo3) {
 
 if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
     console.log("erro");
@@ -9,3 +7,7 @@ if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
 } else {
     console.log("false");
 }
+
+}
+
+triangulo(60 , 60 , 60);

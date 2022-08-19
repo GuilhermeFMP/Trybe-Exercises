@@ -1,4 +1,4 @@
-let nota = 85;
+function porcentagemPorLetras(nota) {
 
 if (nota > 100 || nota < 0) {
     console.log("Erro");
@@ -15,3 +15,7 @@ if (nota > 100 || nota < 0) {
 } else {
     console.log("F");
 }
+
+}
+
+porcentagemPorLetras(85);
