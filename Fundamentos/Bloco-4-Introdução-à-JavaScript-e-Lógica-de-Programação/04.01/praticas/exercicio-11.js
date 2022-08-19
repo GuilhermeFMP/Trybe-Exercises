@@ -33,4 +33,4 @@ console.log(salarioLiquido)
 
 }
 
-ganhos(3500);
+ganhos(2000);
