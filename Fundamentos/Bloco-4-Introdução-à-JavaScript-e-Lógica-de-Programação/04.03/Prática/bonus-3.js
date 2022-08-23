@@ -15,4 +15,4 @@ for (let index = 1; index <= numero; index += 1) {
 
 }
 
-piramide(5)
+piramide(10)
