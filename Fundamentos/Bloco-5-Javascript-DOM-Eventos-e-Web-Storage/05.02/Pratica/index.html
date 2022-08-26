@@ -57,28 +57,41 @@
   </head>
   <body>
     <script>
-        //função
-        function addFirstElement(tag, elemento){
-            let pai = document.getElementsByTagName(tag)[0];
-            let criacao = document.createElement(elemento);
-            pai.appendChild(criacao);
+        //funções
+        function addElement(tag, elemento, index){
+          let pai = document.getElementsByTagName(tag)[index];
+          let criacao = document.createElement(elemento);
+          pai.appendChild(criacao);
+        }
+
+        function addText(tag, index, texto) {
+          document.getElementsByTagName(tag)[index].textContent = texto;
+        }
+
+        function addClass(tag, index, nameClass) {
+          document.getElementsByTagName(tag)[index].className = nameClass;
         }
 
         // Primeiro Exercicio
-        addFirstElement('body', 'h1');
-        document.getElementsByTagName('h1')[0].textContent = 'Exercício 5.2 - JavaScript DOM';
+        addElement('body', 'h1', 0);
+        addText('h1', 0, 'Exercício 5.2 - JavaScript DOM');
         // Segundo Exercicio
-        addFirstElement('body', 'main');
-        document.getElementsByTagName('main')[0].className = 'main-content';
+        addElement('body', 'main', 0);
+        addClass('main', 0, 'main-content');
         // Terceiro Exercicio
-        addFirstElement('main', 'section');
-        document.getElementsByTagName('section')[0].className = 'center-content';
+        addElement('main', 'section', 0);
+        addClass('section', 0, 'center-content');
         // Quarto Exercicio
-        addFirstElement('section', 'p');
-        document.getElementsByTagName('p')[0].textContent = 'Oi, eu sou Guilherme, prazer em conhece-lo!!'
+        addElement('section', 'p', 0);
+        addText('p', 0, 'Oi, eu sou Guilherme, prazer em conhece-lo!!');
         // Quinto Exercicio
-        addFirstElement('main', 'section');
-        document.getElementsByTagName('section')[1].className = 'left-content';
+        addElement('main', 'section', 0);
+        addClass('section', 1, 'left-content');
+        // Sexto Exercicio
+        addElement('main', 'section', 0);
+        addClass('section', 2, 'right-content');
+        // Sétimo Exercicio
+
     </script>
   </body>
 </html>
