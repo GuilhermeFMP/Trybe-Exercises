@@ -116,7 +116,12 @@
         }
         // Primeira alteração
         addElement('h1', 'title', 0);
-        
+        // Segunda alteração
+        for (let i = 0; i <= 2; i += 1) {
+          addClass('h3', i, 'description');
+        }
+        // Terceira alteração
+        document.getElementsByClassName('left-content')[0].remove();
     </script>
   </body>
 </html>
