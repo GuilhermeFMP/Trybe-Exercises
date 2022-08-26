@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+        console.log(document.getElementsByClassName("paragraph"));
+        document.getElementsByClassName("paragraph")[0].innerText = 'Guilherme';
+        
+        const paragraph = document.getElementsByClassName("paragraph");
+        paragraph[0].style.color = "red";
+
+        let subtitle = document.getElementsByTagName("h4");
+        subtitle[0].style.color = "green";
+    </script>
+  </body>
+</html>
