@@ -58,21 +58,24 @@
   <body>
     <script>
         //função
-        function addElement(tag, elemento){
+        function addFirstElement(tag, elemento){
             let pai = document.getElementsByTagName(tag)[0];
             let criacao = document.createElement(elemento);
             pai.appendChild(criacao);
         }
 
         // Primeiro Exercicio
-        addElement('body', 'h1');
+        addFirstElement('body', 'h1');
         document.getElementsByTagName('h1')[0].textContent = 'Exercício 5.2 - JavaScript DOM';
         // Segundo Exercicio
-        addElement('body', 'main');
+        addFirstElement('body', 'main');
         document.getElementsByTagName('main')[0].className = 'main-content';
         // Terceiro Exercicio
-        addElement('main', 'section');
+        addFirstElement('main', 'section');
         document.getElementsByTagName('section')[0].className = 'center-content';
+        // Quarto Exercicio
+        addFirstElement('section', 'p');
+        document.getElementsByTagName('p')[0].textContent = 'Oi, eu sou Guilherme, prazer em conhece-lo!!'
     </script>
   </body>
 </html>
