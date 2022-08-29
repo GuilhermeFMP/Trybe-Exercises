@@ -83,6 +83,31 @@ function botaoFriday() {
   let botao = document.createElement('button');
   pai.appendChild(botao);
   botao.innerHTML = 'Sexta-feira'
-  pai.firstElementChild.id = 'btn-friday'
+  pai.firstElementChild.nextElementSibling.id = 'btn-friday'
 }
 botaoFriday();
+
+// Exercicio 5
+function corTexto () {
+  let feriados = document.getElementsByClassName('friday');
+    for (let index = 0; index < feriados.length; index += 1) {
+      feriados[index].style.color = 'rgb(119, 119, 119)';
+    }
+  }
+  
+  corTexto();
+  
+  function mudancaCorTexto() {
+  let feriados = document.getElementsByClassName('friday');
+      for (let index = 0; index < feriados.length; index += 1) {
+      if (feriados[index].style.color === 'rgb(119, 119, 119)') {
+        feriados[index].style.color = 'red';
+      } else if (feriados[index].style.color === 'red') {
+        feriados[index].style.color = 'rgb(119, 119, 119)';
+      }
+  }
+  }
+  let botaoSextaFeira = document.getElementById('btn-friday');
+  botaoSextaFeira.addEventListener('click', mudancaCorTexto)
+
+  
