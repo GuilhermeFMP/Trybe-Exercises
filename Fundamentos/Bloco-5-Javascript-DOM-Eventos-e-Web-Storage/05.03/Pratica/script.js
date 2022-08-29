@@ -42,7 +42,11 @@ function createDaysOfTheWeek() {
   addClassDecember(25, 'friday');
 
   // Exercicio 2
+<<<<<<< HEAD
 function botao() {
+=======
+function botao(feriados) {
+>>>>>>> 41b58338a194ab8b56df87e6385855770d1d7719
     let pai = document.getElementsByClassName('buttons-container')[0];
     let botao = document.createElement('button');
     pai.appendChild(botao);
@@ -51,6 +55,7 @@ function botao() {
 }
 botao();
 
+<<<<<<< HEAD
 // Exercicio 3
 function corFundo () {
 let feriados = document.getElementsByClassName('holiday');
@@ -77,3 +82,5 @@ let feriados = document.getElementsByClassName('holiday');
 let botaoFeriado = document.getElementById('btn-holiday');
 botaoFeriado.addEventListener('click', mudancaCor)
 
+=======
+>>>>>>> 41b58338a194ab8b56df87e6385855770d1d7719
