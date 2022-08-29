@@ -41,4 +41,13 @@ function createDaysOfTheWeek() {
   addClassDecember(18, 'friday');
   addClassDecember(25, 'friday');
 
-  
+  // Exercicio 2
+function botao(feriados) {
+    let pai = document.getElementsByClassName('buttons-container')[0];
+    let botao = document.createElement('button');
+    pai.appendChild(botao);
+    botao.innerHTML = 'Feriados'
+    pai.firstElementChild.id = 'btn-holiday'
+}
+botao();
+
