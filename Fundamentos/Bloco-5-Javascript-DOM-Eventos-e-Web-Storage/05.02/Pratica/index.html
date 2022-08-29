@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //funções
+        function addElement(tag, elemento, index){
+          let pai = document.getElementsByTagName(tag)[index];
+          let criacao = document.createElement(elemento);
+          pai.appendChild(criacao);
+        }
+
+        function addText(tag, index, texto) {
+          document.getElementsByTagName(tag)[index].textContent = texto;
+        }
+
+        function addClass(tag, index, nameClass) {
+          document.getElementsByTagName(tag)[index].className = nameClass;
+        }
+
+        // Primeiro Exercicio
+        addElement('body', 'h1', 0);
+        addText('h1', 0, 'Exercício 5.2 - JavaScript DOM');
+        // Segundo Exercicio
+        addElement('body', 'main', 0);
+        addClass('main', 0, 'main-content');
+        // Terceiro Exercicio
+        addElement('main', 'section', 0);
+        addClass('section', 0, 'center-content');
+        // Quarto Exercicio
+        addElement('section', 'p', 0);
+        addText('p', 0, 'Oi, eu sou Guilherme, prazer em conhece-lo!!');
+        // Quinto Exercicio
+        addElement('main', 'section', 0);
+        addClass('section', 1, 'left-content');
+        // Sexto Exercicio
+        addElement('main', 'section', 0);
+        addClass('section', 2, 'right-content');
+        // Sétimo Exercicio
+        let img = document.createElement('img');
+        img.src = 'https://picsum.photos/200'
+        document.getElementsByClassName('left-content')[0].appendChild(img);
+        addClass('img', 0, 'small-image');
+        // Oitavo Exercicio
+        addElement('section', 'ul', 2);
+        for (let index = 1; index <= 10; index += 1) {
+          addElement('ul', 'li', 0);
+        }
+        addText('li', 0, 'Um');
+        addText('li', 1, 'Dois');
+        addText('li', 2, 'Tres');
+        addText('li', 3, 'Quatro');
+        addText('li', 4, 'Cinco');
+        addText('li', 5, 'Seis');
+        addText('li', 6, 'Sete');
+        addText('li', 7, 'Oito');
+        addText('li', 8, 'Nove');
+        addText('li', 9, 'Dez');
+        // Nono Exercicio
+        for (let i = 0; i <= 2; i += 1) {
+          addElement('main', 'h3', 0);
+        }
+        // Primeira alteração
+        addElement('h1', 'title', 0);
+        // Segunda alteração
+        for (let i = 0; i <= 2; i += 1) {
+          addClass('h3', i, 'description');
+        }
+        // Terceira alteração
+        document.getElementsByClassName('left-content')[0].remove();
+        // Quarta alteração
+        document.getElementsByClassName('right-content')[0].style.marginRight = 'auto';
+        // Quinta alteração
+        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'green';
+        // Sexta alteração
+        document.getElementsByTagName('li')[9].remove();
+        document.getElementsByTagName('li')[8].remove();
+    </script>
+  </body>
+</html>
