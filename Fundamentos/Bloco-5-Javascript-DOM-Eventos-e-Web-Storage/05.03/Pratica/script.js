@@ -41,4 +41,39 @@ function createDaysOfTheWeek() {
   addClassDecember(18, 'friday');
   addClassDecember(25, 'friday');
 
-  
+  // Exercicio 2
+function botao() {
+    let pai = document.getElementsByClassName('buttons-container')[0];
+    let botao = document.createElement('button');
+    pai.appendChild(botao);
+    botao.innerHTML = 'Feriados'
+    pai.firstElementChild.id = 'btn-holiday'
+}
+botao();
+
+// Exercicio 3
+function corFundo () {
+let feriados = document.getElementsByClassName('holiday');
+  for (let index = 0; index < feriados.length; index += 1) {
+    feriados[index].style.backgroundColor = 'white';
+    feriados[index].style.color = '#777';
+  }
+}
+
+corFundo();
+
+function mudancaCor() {
+let feriados = document.getElementsByClassName('holiday');
+    for (let index = 0; index < feriados.length; index += 1) {
+    if (feriados[index].style.backgroundColor === 'white') {
+      feriados[index].style.backgroundColor = 'green';
+      feriados[index].style.color = 'white';
+    } else if (feriados[index].style.backgroundColor === 'green') {
+      feriados[index].style.backgroundColor = 'white';
+      feriados[index].style.color = '#777';
+    }
+}
+}
+let botaoFeriado = document.getElementById('btn-holiday');
+botaoFeriado.addEventListener('click', mudancaCor)
+
