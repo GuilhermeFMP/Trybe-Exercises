@@ -108,7 +108,7 @@ function corTexto () {
   botaoSextaFeira.addEventListener('click', mudancaCorTexto)
 
 
-  // Exercicio 6 - incompleto
+  // Exercicio 6
   function zoom(event) {
     event.target.style.fontSize = '30px';
   }
@@ -116,9 +116,11 @@ function corTexto () {
     event.target.style.fontSize = '20px';
   }
 
-  let allDays = document.getElementsByClassName('day')[0]
-  allDays.addEventListener('mouseenter', zoom)
-  allDays.addEventListener('mouseleave', zoomOut)
+  let allDays = document.getElementsByClassName('day');
+  for(let index = 0; index < allDays.length; index += 1) {
+    allDays[index].addEventListener('mouseenter', zoom)
+    allDays[index].addEventListener('mouseleave', zoomOut)
+  }
 
   // Exercicio 7
   function tasks(nameTask) {
@@ -151,3 +153,5 @@ function tagSwitch(event) {
 
 let task = document.getElementsByClassName('my-tasks')[0].lastChild;
 task.addEventListener('click', tagSwitch);
+
+// Exercicio 10 
