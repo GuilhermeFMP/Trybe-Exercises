@@ -41,7 +41,7 @@ function createDaysOfTheWeek() {
   addClassDecember(18, 'friday');
   addClassDecember(25, 'friday');
 
-  // Exercicio 2
+// Exercicio 2
 function botao() {
     let pai = document.getElementsByClassName('buttons-container')[0];
     let botao = document.createElement('button');
@@ -56,7 +56,6 @@ function corFundo () {
 let feriados = document.getElementsByClassName('holiday');
   for (let index = 0; index < feriados.length; index += 1) {
     feriados[index].style.backgroundColor = 'white';
-    feriados[index].style.color = '#777';
   }
 }
 
@@ -67,10 +66,8 @@ let feriados = document.getElementsByClassName('holiday');
     for (let index = 0; index < feriados.length; index += 1) {
     if (feriados[index].style.backgroundColor === 'white') {
       feriados[index].style.backgroundColor = 'green';
-      feriados[index].style.color = 'white';
     } else if (feriados[index].style.backgroundColor === 'green') {
       feriados[index].style.backgroundColor = 'white';
-      feriados[index].style.color = '#777';
     }
 }
 }
@@ -110,4 +107,27 @@ function corTexto () {
   let botaoSextaFeira = document.getElementById('btn-friday');
   botaoSextaFeira.addEventListener('click', mudancaCorTexto)
 
-  
+
+  // Exercicio 6 - incompleto
+  function zoom(event) {
+    event.target.style.fontSize = '30px';
+  }
+  function zoomOut(event) {
+    event.target.style.fontSize = '20px';
+  }
+
+  let allDays = document.getElementsByClassName('day')[0]
+  allDays.addEventListener('mouseenter', zoom)
+  allDays.addEventListener('mouseleave', zoomOut)
+
+  // Exercicio 7
+  function tasks(nameTask) {
+    let pai = document.getElementsByClassName('my-tasks')[0];
+    let task = document.createElement('span');
+    pai.appendChild(task);
+    task.innerHTML = nameTask;
+  }
+  tasks('Estudar ');
+  tasks('Treinar ');
+  tasks('Comer ');
+  tasks('Dormir');
