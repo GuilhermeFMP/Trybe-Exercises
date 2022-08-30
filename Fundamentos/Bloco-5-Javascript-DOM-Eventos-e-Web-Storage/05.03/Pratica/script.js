@@ -139,3 +139,15 @@ function colorTask(cor) {
 }
 
 colorTask('red');
+
+// Exercicio 9 - last child diff
+function tagSwitch(event) {
+  if (event.target.className == 'task') {
+    event.target.className = 'task selected'
+  } else if (event.target.className != 'task') {
+    event.target.className = 'task'
+  }
+}
+
+let task = document.getElementsByClassName('my-tasks')[0].lastChild;
+task.addEventListener('click', tagSwitch);
