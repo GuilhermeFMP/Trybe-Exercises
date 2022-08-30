@@ -55,7 +55,7 @@ botao();
 function corFundo () {
 let feriados = document.getElementsByClassName('holiday');
   for (let index = 0; index < feriados.length; index += 1) {
-    feriados[index].style.backgroundColor = 'white';
+    feriados[index].style.backgroundColor = 'rgb(238, 238, 238)';
   }
 }
 
@@ -64,10 +64,10 @@ corFundo();
 function mudancaCor() {
 let feriados = document.getElementsByClassName('holiday');
     for (let index = 0; index < feriados.length; index += 1) {
-    if (feriados[index].style.backgroundColor === 'white') {
+    if (feriados[index].style.backgroundColor === 'rgb(238, 238, 238)') {
       feriados[index].style.backgroundColor = 'skyblue';
     } else if (feriados[index].style.backgroundColor === 'skyblue') {
-      feriados[index].style.backgroundColor = 'white';
+      feriados[index].style.backgroundColor = 'rgb(238, 238, 238)';
     }
 }
 }
@@ -140,7 +140,7 @@ function colorTask(cor) {
   task.className = 'task';
 }
 
-colorTask('red');
+colorTask('green');
 
 // Exercicio 9 - last child diff
 function tagSwitch(event) {
@@ -154,4 +154,14 @@ function tagSwitch(event) {
 let task = document.getElementsByClassName('my-tasks')[0].lastChild;
 task.addEventListener('click', tagSwitch);
 
-// Exercicio 10 
+// Exercicio 10
+function marcador(event) {
+  if (task.className == 'task selected' && event.target.style.color != task.style.backgroundColor) {
+    event.target.style.color = task.style.backgroundColor
+  } else if (task.className == 'task selected' && event.target.style.color == task.style.backgroundColor) {
+    event.target.style.color = '#777'
+  }
+}
+  for(let index = 0; index < allDays.length; index += 1) {
+    allDays[index].addEventListener('click', marcador)
+  }
