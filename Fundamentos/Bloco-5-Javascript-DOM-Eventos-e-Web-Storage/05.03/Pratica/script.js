@@ -65,8 +65,8 @@ function mudancaCor() {
 let feriados = document.getElementsByClassName('holiday');
     for (let index = 0; index < feriados.length; index += 1) {
     if (feriados[index].style.backgroundColor === 'white') {
-      feriados[index].style.backgroundColor = 'green';
-    } else if (feriados[index].style.backgroundColor === 'green') {
+      feriados[index].style.backgroundColor = 'skyblue';
+    } else if (feriados[index].style.backgroundColor === 'skyblue') {
       feriados[index].style.backgroundColor = 'white';
     }
 }
@@ -128,6 +128,14 @@ function corTexto () {
     task.innerHTML = nameTask;
   }
   tasks('Estudar ');
-  tasks('Treinar ');
-  tasks('Comer ');
-  tasks('Dormir');
+
+  // Exercicio 8
+function colorTask(cor) {
+  let pai = document.getElementsByClassName('my-tasks')[0];
+  let task = document.createElement('div');
+  pai.appendChild(task);
+  task.style.backgroundColor = cor;
+  task.className = 'task';
+}
+
+colorTask('red');
