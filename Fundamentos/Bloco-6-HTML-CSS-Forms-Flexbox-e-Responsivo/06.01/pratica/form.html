@@ -16,9 +16,9 @@
         <form action="">
             <div id="all-content">
                 <div id="name-email">
-                    <label for="name">Nome Completo: <input type="text" name="name" id="name" minlength="10" maxlength="40"></label>
+                    <label for="name">Nome Completo: <input type="text" name="name" id="name" minlength="10" maxlength="40" required></label>
                     <br>
-                    <label for="email">Email: <input type="email" name="email" id="email" minlength="10" maxlength="50"></label>
+                    <label for="email">Email: <input type="email" name="email" id="email" minlength="10" maxlength="50" required></label>
                 </div>
 
                 <div id="options-content">
@@ -31,7 +31,7 @@
 
                 <div id="anwser-box">
                     <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? </p>
-                    <label for="anwser"><textarea name="text" id="anwser" placeholder="Digite sua resposta!!" maxlength="500"></textarea>Máximo 500 Caracteres</label>
+                    <label for="anwser"><textarea name="text" id="anwser" placeholder="Digite sua resposta!!" maxlength="500" required></textarea>Máximo 500 Caracteres</label>
                 </div>
 
                 <div id="data-div">
@@ -44,7 +44,7 @@
                     <label for="agreed1">Concordo <input type="checkbox" name="agree" id="agreed1"></label>
                     <br>
                     <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
-                    <label for="agreed2">Concordo <input type="checkbox" name="agree" id="agreed2"></label>
+                    <label for="agreed2">Concordo <input type="checkbox" name="agree" id="agreed2" required></label>
                 </div>
             </div>
             <button type="submit" id="enviar">Enviar</button>
