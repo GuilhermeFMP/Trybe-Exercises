@@ -29,7 +29,7 @@ const dragonDamage = () => {
 
 const warriorDamage = () => {
     const minDamage = battleMembers.warrior.strength;
-    const maxDamage = battleMembers.warrior.strength * 2;
+    const maxDamage = battleMembers.warrior.strength * battleMembers.warrior.weaponDmg;
     let Damage = Number(Math.floor(Math.random() * (maxDamage - minDamage) + minDamage));
     return Damage;
 };
@@ -48,4 +48,28 @@ const mageDamage = () => {
     return Object;
 };
 
-console.log(mageDamage())
+const gameActions = {
+    warriorTurn: (warriorDamage) => {
+        const warriorPoints = warriorDamage();
+        battleMembers.warrior.damage = warriorPoints;
+        battleMembers.dragon.healthPoints -= warriorPoints;
+    },
+    mageTurn: (mageDamage) => {
+        const magePoints = mageDamage();
+        battleMembers.dragon.healthPoints -= magePoints.dano;
+        battleMembers.mage.damage = magePoints.dano;
+        battleMembers.mage.mana -= magePoints.mana;
+    },
+    dragonTurn: (dragonDamage) => {
+        const dragonPoints = dragonDamage();
+        battleMembers.dragon.damage = dragonPoints;
+        battleMembers.mage.healthPoints -= dragonPoints;
+        battleMembers.warrior.healthPoints -= dragonPoints;
+    },
+    turnResults: () => battleMembers,
+};
+
+gameActions.warriorTurn(warriorDamage);
+gameActions.mageTurn(mageDamage);
+gameActions.dragonTurn(dragonDamage);
+console.log(gameActions.turnResults());
