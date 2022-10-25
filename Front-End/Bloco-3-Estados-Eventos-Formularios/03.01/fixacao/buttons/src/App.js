@@ -1,31 +1,51 @@
 import React from 'react';
 
 class App extends React.Component {
-  /* constructor() {
+  constructor() {
     super();
     this.handleClickOne = this.handleClickOne.bind(this);
     this.handleClickTwo = this.handleClickTwo.bind(this);
     this.handleClickThree = this.handleClickThree.bind(this);
-  } */
 
-  handleClickOne = () => {
-    console.log('Clicou 1', this)
+    this.state = {
+      numeroCliques1: 0,
+      numeroCliques2: 0,
+      numeroCliques3: 0,
+    }
+  }
+
+  handleClickOne() {
+    this.setState((estadoAnterior, _props) => ({
+      numeroCliques1: estadoAnterior.numeroCliques1 + 1,
+    }), () => console.log(this.getColorNumber(this.state.numeroCliques1)));
   }
   
-  handleClickTwo = () => {
-    console.log('Clicou 2', this)
+  handleClickTwo() {
+    this.setState((estadoAnterior, _props) => ({
+      numeroCliques2: estadoAnterior.numeroCliques2 + 1,
+    }), () => console.log(this.getColorNumber(this.state.numeroCliques2)));
   }
   
-  handleClickThree = () => {
-    console.log('Clicou 3', this)
+  handleClickThree() {
+    this.setState((estadoAnterior, _props) => ({
+      numeroCliques3: estadoAnterior.numeroCliques3 + 1,
+    }), () => console.log(this.getColorNumber(this.state.numeroCliques3)));
+  }
+
+  getColorNumber(num) {
+    if(num % 2 === 0) {
+      return 'green';
+    }
+    return 'white';
   }
   
   render() {
+    const { numeroCliques1, numeroCliques2, numeroCliques3} = this.state
     return (
       <div className='button'>
-        <button onClick={this.handleClickOne}>Botão 1</button>
-        <button onClick={this.handleClickTwo}>Botão 2</button>
-        <button onClick={this.handleClickThree}>Botão 3</button>
+        <button style={ {backgroundColor: this.getColorNumber(numeroCliques1)} } onClick={this.handleClickOne}>{this.state.numeroCliques1}</button>
+        <button style={ {backgroundColor: this.getColorNumber(numeroCliques2)} } onClick={this.handleClickTwo}>{this.state.numeroCliques2}</button>
+        <button style={ {backgroundColor: this.getColorNumber(numeroCliques3)} } onClick={this.handleClickThree}>{this.state.numeroCliques3}</button>
       </div>
     );
   }
